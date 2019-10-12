@@ -21,3 +21,6 @@ Connect up your ST-Link Programmer, In my case, the JTAG header is the closest S
     SWCLK      JTAG pin 5 
 
 I'm using the UART header to power my board using a USB-to-Serial Cable. This is not needed, you can use a DC power source. Do not power the board form the ST-Link Programmer.
+
+![JTAG WIring](images/stlink.png)
+
