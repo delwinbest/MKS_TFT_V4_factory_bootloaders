@@ -12,13 +12,10 @@ Special thanks to [@darkspr1te](https://github.com/darkspr1te) for retrieving th
 5. The firmware files wihtin this repo. 
 
 ## Connecting ST-LINK v2 to the MKS TFT: 
-Connect up your ST-Link Programmer, In my case, the JTAG header is the closest STM32 chip and it's pin assignments are listed below. 
+Connect up your ST-Link Programmer, In my case, the JTAG header is the closest STM32 chip and it's pin assignments are listed below (left to right). 
 
-    ST-LINK    MKS-TFT32: 
-    5v         AUX-1 5v 
-    GND        AUX-1 GND 
-    SWDIO      JTAG pin 4 
-    SWCLK      JTAG pin 5 
+    3.3v   GND   GND 
+    SWDIO  SWCLK RESET
 
 I'm using the UART header to power my board using a USB-to-Serial Cable. This is not needed, you can use a DC power source. Do not power the board form the ST-Link Programmer.
 
