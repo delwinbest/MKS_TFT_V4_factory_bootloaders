@@ -6,7 +6,7 @@ Special thanks to [@darkspr1te](https://github.com/darkspr1te) for retrieving th
 
 ### Requirements
 1. Basic understanding of how to program microcontrollers (Arduino, etc).
-2. STM32 ST-Link Programmer and cables, [Something Link This](https://www.amazon.com/WINGONEER®-Cortex-M0-Cortex-M3-Interface-Programmer/dp/B012VR3PVA/ref=cm_cr_arp_d_product_top?ie=UTF8).
+2. STM32 ST-Link Programmer and cables, [Something Like This](https://www.amazon.com/WINGONEER®-Cortex-M0-Cortex-M3-Interface-Programmer/dp/B012VR3PVA/ref=cm_cr_arp_d_product_top?ie=UTF8).
 3. STM32CubeProgrammer Software, downleded from [ST's Site](https://www.st.com/en/development-tools/stm32cubeprog.html).
 4. A means to power the MKS board. (DC12V supply, USB-to-Serial cable, etc).
 5. The firmware files wihtin this repo. 
@@ -36,3 +36,8 @@ I'm using the UART header to power my board using a USB-to-Serial Cable. This is
 5. Hit the 'Start Programming' Button. 
 
 ![STM32 Programming](images/stprog02.png)
+
+6. If everything has gone according to plan, the board should boot up and the screen will display the message 'booting'.
+7. Simply load the [MKS TFT Firmware](https://github.com/makerbase-mks/MKS-TFT) onto the SD Card and reboot. The unit will restore the firmware you've provided and reboot into the GUI we love so much. 
+
+![STM32 Programming](images/stprog03.png)
