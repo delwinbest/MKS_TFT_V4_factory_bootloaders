@@ -2,7 +2,7 @@
 
 The MKS TFT Display boards relay on Makerbase's proprietry Bootloader to install their Firmware and initialise the board. For those who have erased their device it's been impossible to reresore these baords to their original....'glory'. 
 
-Special thanks to @darkspr1te for retrieving the original bootrom from the MKS boards which made this guide possible. 
+Special thanks to [@darkspr1te](https://github.com/darkspr1te) for retrieving the original bootrom from the MKS boards which made this guide possible. 
 
 ### Requirements
 1. Basic understanding of how to program microcontrollers (Arduino, etc).
@@ -22,5 +22,17 @@ Connect up your ST-Link Programmer, In my case, the JTAG header is the closest S
 
 I'm using the UART header to power my board using a USB-to-Serial Cable. This is not needed, you can use a DC power source. Do not power the board form the ST-Link Programmer.
 
-![JTAG WIring](images/stlink.png)
+![JTAG Wiring](images/stlink.png)
 
+## Uploading BOOTROM
+
+1. Start STM32CubeProgrammer and 'Connect' to your MKS Board. If everything is connected and powered correctly, you should see the chip information displayed. 
+
+![STM32 Connect](images/stprog01.png)
+
+2. Head over the to 'Erasing & Programming' section (note red arrow below). 
+3. For good measure I run the 'Full chip erase'. 
+4. Select the correct boot rom in the 'File Path' Section. I have included bootsoms for v4. and v1. in this repo. NThe current board is v4.0. 
+5. Hit the 'Start Programming' Button. 
+
+![STM32 Programming](images/stprog02.png)
