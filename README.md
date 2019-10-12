@@ -1,4 +1,4 @@
-# MKS TFT Boot ROM FW and Guide
+# MKS TFT Factory Boot ROM Restore Guide
 
 The MKS TFT Display boards relay on Makerbase's proprietry Bootloader to install their Firmware and initialise the board. For those who have erased their device it's been impossible to reresore these baords to their original....'glory'. 
 
